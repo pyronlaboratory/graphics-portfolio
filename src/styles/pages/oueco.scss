@@ -1,0 +1,113 @@
+.page {
+  .container {
+    .top-row {
+      height: 50vh;
+      align-items: flex-end;
+      .top {
+        padding-bottom: 40px;
+        .details {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .location {
+            span:nth-child(2) {
+              margin-left: 16px;
+            }
+          }
+          .mua {
+            text-transform: uppercase;
+          }
+        }
+        .model {
+          overflow: hidden;
+          .title {
+            margin-right: 72px;
+          }
+          span {
+            display: inline-block;
+            position: relative;
+            font-weight: 400;
+            font-size: 3rem;
+            @media (max-width: 1440px) {
+              font-size: 128px;
+            }
+          }
+        }
+      }
+    }
+    .bottom-row {
+      height: 50vh;
+      position: relative;
+      .bottom {
+        height: 100%;
+        width: 100%;
+        .thumbnail-single {
+          width: 100%;
+          height: 800px;
+          margin: 0 auto;
+          overflow: hidden;
+          position: absolute;
+          left: 0;
+          right: 0;
+          .frame-single {
+            padding: 0 32px;
+            img {
+              position: relative;
+              width: 100%;
+            }
+          }
+        }
+      }
+      .scroll-for-more {
+        position: absolute;
+        bottom: 200px;
+        left: 200px;
+        z-index: 20;
+        .icon {
+          svg {
+            height: auto;
+            width: 28px;
+          }
+        }
+        .text {
+          margin-top: 8px;
+          color: $white;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
+
+.page {
+  height: 100% !important;
+  .detailed-information {
+    height: 600px;
+    padding-top: 500px;
+    .container {
+      .row {
+        justify-content: space-between;
+        align-items: flex-start;
+        h2 {
+          font-size: 2rem;
+        }
+        p {
+          font-size: 1rem;
+          line-height: 28px;
+          font-weight: 400;
+          width: 800px;
+        }
+      }
+    }
+  }
+}
+
+.oueco-overlay {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    width: 100%;
+    background: black;
+    position: absolute;
+    z-index: 1;   
+    left: 0;
+}

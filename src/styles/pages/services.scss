@@ -1,0 +1,22 @@
+.page {
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container {
+        h1 {
+            font-size: 3.5rem;
+        }
+    }
+}
+
+.services-overlay {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    width: 100%;
+    background: black;
+    position: absolute;
+    z-index: 1;   
+    top: 0;
+}
